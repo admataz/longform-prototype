@@ -1,0 +1,17 @@
+{#each paragraphs as par}
+<p>{par}</p>
+{/each}
+
+<script>
+	import lorem from 'lorem-ipsum';
+	
+	export default {
+		data() {
+			return {
+				paragraphs: [
+					lorem({ units: 'paragraph' })
+				]
+			};
+		}
+	};
+</script>

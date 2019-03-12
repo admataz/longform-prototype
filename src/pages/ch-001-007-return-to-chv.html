@@ -1,0 +1,42 @@
+<div class="page">
+  <h1>Return to the CHV</h1>
+  <div class="bgvideo">
+      <Video src="/media/mp4/Pigeons-and-Pond.mp4" loop />
+  </div>
+  <div class="textbody">
+      <Lipsum />
+      <Lipsum />
+      <Lipsum />
+  </div>
+
+</div>
+
+
+<style>
+.page{
+  position:relative;
+}
+
+.textbody {
+  background-color: rgba(0,0,0,.5);
+  z-index: 2147483647;
+}
+.bgvideo{
+  top: 0;
+  position: absolute;
+  opacity: .2;
+  z-index: 1
+}
+</style>
+
+<script>
+  import Lipsum from '../components/lipsum.html'
+  import Video from '../components/video.html'
+
+  export default {
+    components: {
+      Lipsum,
+      Video
+    }
+  }
+</script>
