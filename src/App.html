@@ -7,64 +7,70 @@
 </div>
 <div id="app" class="nav-{navStyle}">
 	{#if (navStyle==="scroll" || navStyle==="snap")}
-	<div class="page">
+	<div class="page" id="Ch000000">
 		<Ch000000 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch000001">
 		<Ch000001 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch001001">
 		<Ch001001 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch001002">
 		<Ch001002 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch001003">
 		<Ch001003 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch001004">
 		<Ch001004 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch001005">
 		<Ch001005 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch001006">
 		<Ch001006 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch001007">
 		<Ch001007 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch001008">
 		<Ch001008 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch002001">
 		<Ch002001 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch002002">
 		<Ch002002 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch002003">
 		<Ch002003 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch002004">
 		<Ch002004 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch0025000">
+			<Ch0025000 />
+		</div>
+	<div class="page" id="Ch0025001">
 		<Ch0025001 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch0025002">
 		<Ch0025002 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch003000">
+			<Ch003000 />
+		</div>
+	<div class="page" id="Ch003001">
 		<Ch003001 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch003002">
 		<Ch003002 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch003003">
 		<Ch003003 />
 	</div>
-	<div class="page">
+	<div class="page" id="Ch003004">
 		<Ch003004 />
 	</div>
 	{/if}
@@ -76,8 +82,8 @@
 
 	<div class="nav-bar">
 		{navOrder[navIndex]}
-		<a href="#" on:click|preventDefault="nav(-1)">prev</a>
-		<a href="#" on:click|preventDefault="nav(1)">next</a>
+		<a href="#prev" on:click|preventDefault="nav(-1)">prev</a>
+		<a href="#next" on:click|preventDefault="nav(1)">next</a>
 	</div>
 	{/if}
 
@@ -161,8 +167,10 @@
 	import Ch002002 from './pages/ch-002-002-background-history.html'
 	import Ch002003 from './pages/ch-002-003-what-is-er.html'
 	import Ch002004 from './pages/ch-002-004-how-er-works.html'
+	import Ch0025000 from './pages/ch-0025-000-title.html'
 	import Ch0025001 from './pages/ch-0025-001-title.html'
 	import Ch0025002 from './pages/ch-0025-002-introducing-navrongo.html'
+	import Ch003000 from './pages/ch-003-000-title.html'
 	import Ch003001 from './pages/ch-003-001-research-in-practice-1.html'
 	import Ch003002 from './pages/ch-003-002-research-in-practice-2.html'
 	import Ch003003 from './pages/ch-003-003-research-in-practice-3.html'
@@ -171,25 +179,27 @@
 	export default {
 		components: {
 			Ch000000,
-			Ch000001,
-			Ch001001,
-			Ch001002,
-			Ch001003,
-			Ch001004,
-			Ch001005,
-			Ch001006,
-			Ch001007,
-			Ch001008,
-			Ch002001,
-			Ch002002,
-			Ch002003,
-			Ch002004,
-			Ch0025001,
-			Ch0025002,
-			Ch003001,
-			Ch003002,
-			Ch003003,
-			Ch003004
+					Ch000001,
+					Ch001001,
+					Ch001002,
+					Ch001003,
+					Ch001004,
+					Ch001005,
+					Ch001006,
+					Ch001007,
+					Ch001008,
+					Ch002001,
+					Ch002002,
+					Ch002003,
+					Ch002004,
+					Ch0025000,
+					Ch0025001,
+					Ch0025002,
+					Ch003000,
+					Ch003001,
+					Ch003002,
+					Ch003003,
+					Ch003004
 		},
 		data() {
 			return {
@@ -208,8 +218,10 @@
 					'Ch002002',
 					'Ch002003',
 					'Ch002004',
+					'Ch0025000',
 					'Ch0025001',
 					'Ch0025002',
+					'Ch003000',
 					'Ch003001',
 					'Ch003002',
 					'Ch003003',
@@ -231,8 +243,10 @@
 					Ch002002,
 					Ch002003,
 					Ch002004,
+					Ch0025000,
 					Ch0025001,
 					Ch0025002,
+					Ch003000,
 					Ch003001,
 					Ch003002,
 					Ch003003,

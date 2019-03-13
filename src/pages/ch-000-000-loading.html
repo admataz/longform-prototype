@@ -1,1 +1,13 @@
 <h1>Loading...</h1>
+
+<script>
+  export default {
+    oncreate() {
+      setTimeout(() => {
+        console.log(document.getElementById('Ch000001'))
+        document.getElementById('Ch000001').scrollIntoView({block: "start", behavior: "smooth"})
+      }, 2000)
+    }
+
+  }
+</script>

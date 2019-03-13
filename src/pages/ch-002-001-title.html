@@ -1,15 +1,48 @@
+
+
+
 <div class="page">
-  <h1>Introduction</h1>
-  <Lipsum />
+  <div class="bgvideo">
+      <Video src="/media/mp4/test04.mp4" loop autoplay muted />
+  </div>
+  <div class="textbody">
+      <div class="page">
+          <h1>CHAPTER 2: explaining embedded research - what is it/why it’s different? </h1>
+        </div>
+      <Lipsum />
+      <Lipsum />
+      <Lipsum />
+  </div>
+
 </div>
 
 
+<style>
+.page{
+  position:relative;
+}
+
+.textbody {
+  background-color: rgba(0,0,0,.5);
+  z-index: 2147483647;
+  padding: 2em;
+}
+.bgvideo{
+  top: 0;
+  position: absolute;
+  opacity: .5;
+  z-index: 1
+}
+</style>
+
 <script>
   import Lipsum from '../components/lipsum.html'
+  import Video from '../components/video.html'
 
   export default {
     components: {
-      Lipsum
+      Lipsum,
+      Video
     }
   }
 </script>
